@@ -11,9 +11,9 @@ import (
 
 // addCmd represents the add command
 var addCmd = &cobra.Command{
-	Use:   "add",
-	Short: "add values passed to function",
-	Long:  `Demo application to demonstrate cobra featues`,
+	Use:   "get",
+	Short: "get repo details",
+	Long:  `Get Repo information using the Cobra Command`,
 	Run: func(cmd *cobra.Command, args []string) {
 		username, _ := rootCmd.Flags().GetString("username")
 		password, _ := rootCmd.Flags().GetString("password")
